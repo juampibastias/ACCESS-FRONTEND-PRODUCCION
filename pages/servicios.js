@@ -9,10 +9,8 @@ export const Servicios = () => {
         <title>ACCESS - SERVICIOS</title>
         <link rel="icon" src="../public/images/logo-favicom.png"></link>
       </Head>
-      <h1>Nuestros Servicios</h1>
-      
-      
 
+      <h1>Nuestros Servicios</h1>
       <div className="servicio-items">
         <div className="servicio-item">
           <img
@@ -24,17 +22,17 @@ export const Servicios = () => {
             <p>tel: (123)123546</p>
           </div>
         </div>
-        <Link href={'/consultaServicio'}>
-        <div className="servicio-item" style={{cursor: 'pointer'}}>
-          <img
-            src="icons/3709743_assistance_fix_problem_service_trouble_icon.svg"
-            alt=""
-          />
-          <div className="text">
-            <h4>Servicio Técnico</h4>
-            <p>tel: (123)123546</p>
+        <Link href={"/consultaServicio"}>
+          <div className="servicio-item" style={{ cursor: "pointer" }}>
+            <img
+              src="icons/3709743_assistance_fix_problem_service_trouble_icon.svg"
+              alt=""
+            />
+            <div className="text">
+              <h4>Servicio Técnico</h4>
+              <p>tel: (123)123546</p>
+            </div>
           </div>
-        </div>
         </Link>
         <div className="servicio-item">
           <img src="icons/desarrollo.svg" alt="" />

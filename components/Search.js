@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import artefactos from './data/artefactos.json';
+import artefactos from '../public/uploaded_servicios/servicios.json';
 
 function Search() {
   const [resultados, setResultados] = useState(null);

@@ -59,6 +59,12 @@ function NavBar() {
             <Link href="/categories">
                 <a className="dropdown-item">Categorias</a>
             </Link>
+            <Link href="/uploadPage">
+                <a className="dropdown-item">Carga servicios</a>
+            </Link>
+            <Link href="/uploadPage1">
+                <a className="dropdown-item">Carga masiva productos</a>
+            </Link>
             
             </>
         )

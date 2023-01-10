@@ -1,0 +1,22 @@
+[
+    {
+      "numero": 12345,
+      "reparado": true,
+      "costoReparacion": 1500
+    },
+    {
+      "numero": 23456,
+      "reparado": false,
+      "costoReparacion": null
+    },
+    {
+      "numero": 34567,
+      "reparado": true,
+      "costoReparacion": 2500
+    },
+	{
+      "numero": 891011,
+      "reparado": true,
+      "costoReparacion": 14550
+    }
+  ]
