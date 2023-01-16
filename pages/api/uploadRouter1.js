@@ -1,7 +1,5 @@
 import fs from "fs";
 import multer from "multer";
-import mongoose from 'mongoose'
-import Product from './../../models/productModel'
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
