@@ -1,5 +1,7 @@
 import fs from "fs";
 import multer from "multer";
+import mongoose from 'mongoose'
+import Product from './../../models/productModel'
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
@@ -11,6 +13,7 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage });
+const jsonPath = './public/uploaded_productos/productos.json'
 
 export default async (req, res) => {
   switch (req.method) {
@@ -41,17 +44,32 @@ export default async (req, res) => {
           res.status(500).end();
           return;
         }
-        res.status(200).end();
-      });
-      break;
-    default:
-      res.status(405).end();
-      break;
-  }
-};
+        //validar el archivo json
+        let rawdata = fs.readFileSync(jsonPath);
+        let products = JSON.parse(rawdata);
+        for(let i = 0; i < products.length; i++) {
+          let product = products[i];
+          //validar cada producto del json antes de guardarlo en la base de datos
+          if(!product.title || !product.price || !product.description || !product.content || !product.color || !product.images || !product.category) {
+          console.error("Producto no valido: " + JSON.stringify(product));
+          continue;
+          }
+          //guardar producto en la base de datos
+          let newProduct = new productModels(product);
+          await newProduct.save();
+          }
+          res.status(200).end();
+          });
+          break;
+          default:
+          res.status(405).end();
+          break;
+          }
+          };
+          
+          export const config = {
+          api: {
+          bodyParser: false
+          }
+          }
 
-export const config = {
-  api: {
-    bodyParser: false
-  }
-}
