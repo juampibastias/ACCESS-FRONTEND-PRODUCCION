@@ -19,8 +19,14 @@ export const UploadPage = () => {
     // Enviar el archivo al servidor mediante una petición HTTP POST
     const formData = new FormData();
     formData.append("file", file);
-    await axios.post("/api/uploadRouter", formData);
+    try {
+      const response = await axios.post("/api/uploadRouter", formData);
+      alert("Subida exitosa");
+    } catch (error) {
+      alert("Error al subir archivo");
+    }
   };
+  
 
   return (
     <div className="contenedor-sucursales">
