@@ -1,0 +1,124 @@
+{
+  "opcionEnvio": [""],
+  "provincias": [
+    { "id": 0, 
+      "nombre": "COORDINAR CON UN AGENTE DE VENTAS", 
+      "costo": 0 
+    },
+    {
+      "id": 1,
+      "nombre": "Buenos Aires",
+      "costo": 900
+    },
+    {
+      "id": 2,
+      "nombre": "CABA",
+      "costo": 900
+    },
+    {
+      "id": 3,
+      "nombre": "Catamarca",
+      "costo": 700
+    },
+    {
+      "id": 4,
+      "nombre": "Chaco",
+      "costo": 1000
+    },
+    {
+      "id": 5,
+      "nombre": "Chubut",
+      "costo": 1000
+    },
+    {
+      "id": 6,
+      "nombre": "Cordoba",
+      "costo": 700
+    },
+    {
+      "id": 7,
+      "nombre": "Entre Rios",
+      "costo": 1000
+    },
+    {
+      "id": 8,
+      "nombre": "Formosa",
+      "costo": 1000
+    },
+    {
+      "id": 9,
+      "nombre": "Jujuy",
+      "costo": 1000
+    },
+    {
+      "id": 10,
+      "nombre": "La Pampa",
+      "costo": 700
+    },
+    {
+      "id": 11,
+      "nombre": "La Rioja",
+      "costo": 700
+    },
+    {
+      "id": 12,
+      "nombre": "Mendoza",
+      "costo": 600
+    },
+    {
+      "id": 13,
+      "nombre": "Misiones",
+      "costo": 1000
+    },
+    {
+      "id": 14,
+      "nombre": "Neuquen",
+      "costo": 700
+    },
+    {
+      "id": 15,
+      "nombre": "Rio Negro",
+      "costo": 700
+    },
+    {
+      "id": 16,
+      "nombre": "Salta",
+      "costo": 1000
+    },
+    {
+      "id": 17,
+      "nombre": "San Juan",
+      "costo": 700
+    },
+    {
+      "id": 18,
+      "nombre": "San Luis",
+      "costo": 700
+    },
+    {
+      "id": 19,
+      "nombre": "Santa Cruz",
+      "costo": 1000
+    },
+    {
+      "id": 20,
+      "nombre": "Santa Fe",
+      "costo": 1000
+    },
+    {
+      "id": 21,
+      "nombre": "Santiago del Estero",
+      "costo": 900
+    },
+    {
+      "id": 22,
+      "nombre": "Tierra del Fuego",
+      "costo": 1000
+    },
+    {
+      "id": 23,
+      "nombre": "Tucuman",
+      "costo": 900
+    }
+  ]
+}

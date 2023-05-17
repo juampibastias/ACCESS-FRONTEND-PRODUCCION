@@ -1,0 +1,40 @@
+.form-control {
+  width: 100%;
+  border: 2px solid #000000;
+  border-radius: 50px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0 !important;
+}
+
+.placeholder-busqueda {
+  width: 12rem;
+  font-size: 20px;
+  padding: 0 0 0 3.2rem;
+  color: black !important;
+  text-align: left !important;
+}
+
+.searchHolder{
+  background-color: transparent;
+  width: 12rem;
+  font-size: 20px;
+  /* padding: 0 0 0 3.2rem; */
+  color: black !important;
+  text-align: center!important;
+}
+
+.placeholder-busqueda::placeholder {
+  color: black;
+  padding: 0 0 0 0;
+}
+
+.form-control:focus {
+  color: #000000;
+  background-color: #fff;
+  border-color:  #8268c1 !important;
+  outline: 0;
+  box-shadow: none;
+}

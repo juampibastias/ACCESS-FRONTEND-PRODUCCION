@@ -1,0 +1,39 @@
+/* .products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  justify-content: center;
+  margin: 2rem 0;
+} */
+
+.cont-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products .card-img-top {
+  object-fit: contain;
+  height: 100%;
+  max-height: 300px;
+  display: block;
+  margin: auto;
+  aspect-ratio: 1/1;
+}
+.products .card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+.products .card-text {
+  width: 10rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+/* --------- Detail Product ----------- */
+.detail_page .img-thumbnail.active {
+  border-color: orangered;
+  padding: 2px;
+}
